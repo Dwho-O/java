@@ -1,4 +1,4 @@
-package JAVA_PROJETOS;
+
 import java.util.Scanner;
 public class ExVD05 {
     public static void main (String[] args){
