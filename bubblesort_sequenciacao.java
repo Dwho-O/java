@@ -7,7 +7,7 @@ public class ExVD02 {
         ArrayList<Double> valores = new ArrayList<>();
         char op;
         double temp = 0.0;
-        double valor, soma = 0.0, maior;
+        double valor, soma = 0.0, maior = 0.0;
 
         //Pega os dados e coloca na fila(lista)
         do{
@@ -16,7 +16,7 @@ public class ExVD02 {
             valores.add(valor);
             System.out.println("Deseja continuar? s/n: ");
             op = entrada.next().charAt(0);
-        }while(op == 's' || op == 'S'); // op!= 'n' && op != 'N'
+        }while(op == 's' || op == 'S');
 
         //Controle de sequênciação
         for(int i = 0; i < valores.size(); i++){ //Size pega tamanho lista, conforme mais itens for adicionado mais ele incrementa o valor de size
@@ -31,6 +31,19 @@ public class ExVD02 {
                 }
             }
         }
+
+        for(int i = 0; i < valores.size(); i++){
+            soma += valores.get(i); 
+            //soma = soma + ___
+            if(valores.get(i) > maior){
+                maior = valores.get(i);
+            }
+        System.out.println(valores.get(i));
+        }
+
+        System.out.println("Soma dos valores: "+ soma);
+        System.out.println("Maior valor: "+maior);
+        System.out.println(("Média: "+soma/valores.size()));
 
         //Imprime resultado
             System.out.println("Valores: " + valores);
