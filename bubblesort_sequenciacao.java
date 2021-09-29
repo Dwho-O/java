@@ -1,4 +1,3 @@
-package JAVA_PROJETOS;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class ExVD02 {
